@@ -81,3 +81,7 @@ def complete_data(cached=False):
     else:
         complete_data = pd.read_csv('complete_data.csv', index_col=0)
     return complete_data
+
+def get_power_data():
+    energy = pd.read_csv('energy.csv', index_col = 0)
+    return energy
